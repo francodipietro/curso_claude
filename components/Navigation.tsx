@@ -7,6 +7,7 @@ const links = [
   { href: '/', label: 'Dashboard', icon: '📊' },
   { href: '/expenses', label: 'Expenses', icon: '📋' },
   { href: '/add', label: 'Add Expense', icon: '➕' },
+  { href: '/export', label: 'Export Hub', icon: '☁️' },
 ];
 
 export default function Navigation() {

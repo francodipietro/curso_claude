@@ -35,6 +35,23 @@ export default function DashboardPage() {
       <SummaryCards expenses={expenses} />
       <SpendingChart expenses={expenses} />
       <RecentExpenses expenses={expenses} />
+
+      {/* Export Hub promo */}
+      <Link
+        href="/export"
+        className="flex items-center justify-between bg-gradient-to-r from-slate-800 to-slate-900 rounded-2xl px-6 py-4 text-white hover:from-slate-700 hover:to-slate-800 transition group shadow-md"
+      >
+        <div className="flex items-center gap-3">
+          <span className="text-3xl">☁️</span>
+          <div>
+            <p className="font-bold text-sm">Export Hub</p>
+            <p className="text-slate-400 text-xs mt-0.5">
+              Templates · Cloud integrations · Automation · History
+            </p>
+          </div>
+        </div>
+        <span className="text-slate-400 group-hover:text-white transition text-lg">→</span>
+      </Link>
     </div>
   );
 }
